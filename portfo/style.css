@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@media screen and (max-width: 400px){
+    #navbar li{
+        display: none;
+    }
+    #projects img{
+        max-width: 80vw;
+        align-items: center;
+    }
+    #footer h2{
+        font-size: smaller;
+    }
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: solid 2px;
+    box-shadow: 5px 12px 27px 7px #000000;
+    height: 10%;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+    margin: 40px;
+    margin-left: 80px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: x-large;
+    padding-bottom: 0;
+    transition-duration: 1s ease;
+}
+#navbar li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+i{
+    font-size: 80px;
+}
+#welcome-section{
+    background: fixed;
+    background: rgb(137,135,170);
+    background: linear-gradient(146deg, rgba(137,135,170,0.927007299270073) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,0.9513381995133819) 100%);
+    height: 100vh;
+    text-align: center;
+    padding-top: 400px;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: antiquewhite;
+    text-shadow: 10px 4px 9px rgba(0,0,0,0.57);
+}
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: rgba(250, 235, 215, 0.781);
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-title{
+    margin-top: 100px;
+    text-align: center;
+    color: aliceblue;
+}
+#projects img{
+    box-shadow: 5px 5px 15px 5px #ffffff;
+    height: 20rem;
+    width: 35em;
+    margin: 90px;
+}
+#projects img:hover{
+    border-radius: 20px;
+    box-shadow: none;
+    transform: scale(1.2);
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+figcaption{
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: x-large;
+}
+footer{
+    background: linear-gradient(146deg, rgba(137,135,170,0.927007299270073) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,0.9513381995133819) 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+footer i{
+    margin-left: 200px;
+    border-radius: 20px;
+}  
+footer i:hover{
+    color: #ffffff;
+    box-shadow: 5px 12px 27px 7px #000000;
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
